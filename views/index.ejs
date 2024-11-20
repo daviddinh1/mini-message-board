@@ -5,6 +5,10 @@
  <title>Home page</title>
 </head>
 <body>
-  <%= message %>
+  <% for(let i = 0; i < messages.length; i++) {%>
+   <div><%= messages[i].text %></div>
+   <div><%= messages[i].user %></div>
+   <div><%= messages[i].added %></div>
+  <% } %>
 </body>
 </html>
