@@ -10,6 +10,5 @@ const { Pool } = require("pg");
 // });
 
 module.exports = new Pool({
-  connectionString:
-    "postgresql://postgres:bzlUNEefGDtLUWjzgAhzHgUUyoGzFQcb@junction.proxy.rlwy.net:58126/msgs,",
+  connectionString: `postgresql://${process.env.ROLE_NAME}:${process.env.ROLE_PASS}@localhost:5432/msgs`,
 });
