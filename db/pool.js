@@ -11,5 +11,5 @@ const { Pool } = require("pg");
 
 module.exports = new Pool({
   connectionString:
-    "postgresql://postgres:bzlUNEefGDtLUWjzgAhzHgUUyoGzFQcb@junction.proxy.rlwy.net:58126/railway,",
+    "postgresql://postgres:bzlUNEefGDtLUWjzgAhzHgUUyoGzFQcb@junction.proxy.rlwy.net:58126/msgs,",
 });
