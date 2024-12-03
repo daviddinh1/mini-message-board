@@ -49,4 +49,8 @@ indexRouter.get("/", msgsController.getAllMsgs);
 
 indexRouter.get("/new", msgsController.getNewForm);
 
+indexRouter.post("/new", msgsController.pushNewMsg);
+
+indexRouter.get("/message/:i", msgsController.getOneMsg);
+
 module.exports = indexRouter;
