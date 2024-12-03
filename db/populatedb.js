@@ -18,7 +18,8 @@ const SQL = `
 async function main() {
   console.log("seeding...");
   const client = new Client({
-    connectionString: "postgresql://daviddinh:coolboy111@localhost:5432/msgs",
+    connectionString:
+      "postgresql://postgres:bzlUNEefGDtLUWjzgAhzHgUUyoGzFQcb@junction.proxy.rlwy.net:58126/railway",
   });
   await client.connect();
   await client.query(SQL);
